@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #d3d2d2;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- cabeçario -->
+    <div class="container-fluid p-3">
+        <header class="d-flex justify-content-between align-items-center bg-white p-2 rounded mb-3 shadow-sm">
+            <div class="d-flex align-items-center">
+                <img src="images/user-solid.svg" id="user-icon" alt="Ícone de Usuário">
+                <span id="usuario-nome" class="ms-2 fw-semibold">Usuário</span>
+            </div>
+            <div>
+                <img src="images/gear-solid.svg" id="config-gear" alt="Ícone de Configurações">
+            </div>
+        </header>
+
+        <!-- Cards -->
+        <section class="flex-wrap justify-content-center gap-3 mb-4 d-flex">
+            <div class="card">
+                <h5 class="pt-3">Receita do Mês:</h5>
+                <p id="receita-total">R$ 0,00</p>
+            </div>
+
+            <div class="card">
+                <h5 class="pt-3">Despesas do Mês:</h5>
+                <p id="despesa-total">R$ 0,00</p>
+            </div>
+
+            <div class="card">
+                <h5 class="pt-3">Saldo Atual:</h5>
+                <p>R$ 0,00</p>
+            </div>
+
+            <div class="card">
+                <h5 class="pt-3">Progresso Atual:</h5>
+                <p>R$ 0,00</p>
+            </div>
+        </section>
+
+        <!-- Gráficos -->
+        <section class="d-flex flex-column flex-md-row justify-content-center gap-3 mb-4">
+            <div class="grafico w-100">
+                <h4 class="pt-3">Despesas por Categoria</h4>
+                <!-- Gráfico -->
+            </div>
+
+            <div class="grafico w-100">
+                <h4 class="pt-3">Evolução Mensal</h4>
+                <!-- Gráfico -->
+            </div>
+        </section>
+
+        <!-- Metas e Vencimentos -->
+        <section class="d-flex flex-column flex-md-row justify-content-center gap-3 mb-4">
+            <div class="box w-100">
+                <h4 class="pt-3">Metas</h4>
+                <!-- Conteúdo -->
+            </div>
+
+            <div class="box w-100">
+                <h4 class="pt-3">Próximos Vencimentos</h4>
+                <!-- Conteúdo -->
+            </div>
+        </section>
+
+        <section class="d-flex flex-column flex-md-row justify-content-center gap-3">
+            <button class="btn-custom">Adicionar Receitas</button>
+            <button class="btn-custom">Adicionar Despesas</button>
+            <button class="btn-custom">Registrar Parcelamentos</button>
+        </section>
+    </div>
+</body>
+
+</html>
